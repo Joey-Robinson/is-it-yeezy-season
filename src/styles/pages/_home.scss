@@ -1,0 +1,23 @@
+.home {
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  color: white;
+  &--heading {
+    align-self: center;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    justify-self: center;
+    font-size: 4rem;
+    margin-top: 10rem;
+  }
+  &--answer {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    align-self: end;
+    justify-self: center;
+    font-size: 3rem;
+  }
+}
